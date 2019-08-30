@@ -6,4 +6,15 @@ $(function() {
     }
   });
 
+  $('.submitMood').click(function() {
+    let userEmail = $('.email').val();
+    let moodInput = $('.oneWordMood').val();
+    let journalInput = $('.journal').val();
+    let currentDate = new Date;
+    let subject = `Mood Mail Sent On ${currentDate}`;
+    let body = `On ${currentDate} you wrote that your one word mood was ${moodInput}. You also journaled the following: ${journalInput}`;
+
+    window.open(`mailto:${userEmail}?subject=${subject}&body=${body}`);
+  });
+
 })

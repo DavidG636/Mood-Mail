@@ -34,6 +34,12 @@ body {
   resize: none;
 }
 
+.oneWordMood {
+  font-family: 'Indie Flower', cursive;
+  font-size: 25pt;
+  text-align:center;
+}
+
 .submitMood {
   display:block;
   width:40vw;
